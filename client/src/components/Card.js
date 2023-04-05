@@ -7,7 +7,7 @@ import { supabase } from '../client'
 
 const Card = (props) =>  {
 
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(props.count);
   const updateCount = async (event) => {
     event.preventDefault();
     await supabase
